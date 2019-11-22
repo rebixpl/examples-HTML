@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content=" Input & Forms">
+    <title>Input & Forms</title>
+  </head>
+  <body>
+
+    <form>
+    <input type="text" value="Enter your username"/> <!-- it creates textbox  inside which you can write information; value tag automatically includes the text into a textbox-->
+    <input type="password" /> <!-- it covers written text in box with dots to hide what are you writing into it -->
+    </form>
+
+    <div>
+      <!-- textarea gives us a huge block where we can input our text -->
+      <textarea rows="10" cols="30">
+        Enter a text over here!
+      </textarea>
+    </div>
+
+    <hr/>
+
+    <div>
+      <form> <!-- form tag is basically used to store input elements -->
+        <input type="date" /> <!-- its special textbox to input a specific date -->
+        <input type="email" />
+        <input type="range" min="0" max="10" /> <!-- tworzy taki suwak (slider), który można przesuwać -->
+        <input type="file" /> <!-- umożliwia użytkownikowi wybranie pliku do wysłania (to upload) z jego dysku (otwiera okno wyboru) -->
+        <input type="checkbox" /> <!-- it creates a little checkbox -->
+        <input type="color" name="favcolor" value="#ff0000"/> <!-- Defines a color picker; value is  a predefined red color-->
+        <input type="number" min="1" max="5" /> <!-- Define a field for entering a number (You can also set restrictions on what numbers are accepted) -->
+
+        <hr/>
+
+        <!-- input type radio create radio button (round checkbox), you can check only one radio button of the same name at the same time -->
+        <input name="btn" type="radio" />
+        <input name="btn" type="radio" />
+        <input name="btn" type="radio" />
+        <input name="btn" type="radio" />
+        <input name="btn" type="radio" />
+
+        <hr/>
+
+        <input type="submit" /> <!-- it create a little submit button -->
+        <input type="button" value="Clike me im lonely button!" />
+
+        <hr/>
+
+          <input type="search" q="googlesearch" /> <!-- Define a search field (like a site search, or Google search): -->
+          <input type="time" name="usr_time" /> <!-- Define a control for entering a time (no time zone): -->
+          <input type="url" name="homepage" /> <!-- Define a field for entering a URL: -->
+      </form>
+    </div>
+
+  </body>
+</html>
