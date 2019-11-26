@@ -4,10 +4,31 @@
     <meta charset="utf-8">
     <meta name="description" content="Tables in HTML">
     <title>TabLeS</title>
+
+    <!-- *border* property adds border for the table, If you do not specify a border for the table, it will be displayed without borders. -->
+    <!-- If you want the borders to collapse into one border, add the CSS *border-collapse* property. -->
+    <!-- Cell *padding* specifies the space between the cell content and its borders. -->
+    <style>
+      table, th, td {
+        border: 1px solid blue;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        padding: 10px;
+      }
+
+      table#table0 {
+        background-color: #df9f9f;
+      }
+
+    </style>
+
   </head>
   <body>
 
-    <table>
+    <table id="table0"> <!-- you can use style attribute -> *<table style="width:100%">* to automatically adjust table size to window size
+                          To define a special style for a special table, add an *id* attribute to the table, now you can define a special style for this table ( in style tag at the top )-->
       <thead> <!-- table head -->
           <caption><h2>List of Numbers</h2></caption> <!-- the title of the table -->
           <tr>
@@ -18,7 +39,7 @@
       </thead>
       <tbody>
           <tr> <!-- table row -->
-            <td colspan="2">1</td> <!-- table data, colspan="integer" makes the piece of data take up *integer* columns in the table -->
+            <td>1</td>
             <td>2</td>
             <td>3</td>
             <td>3.5</td>
@@ -27,6 +48,10 @@
             <td>4</td>
             <td>5</td>
             <td>6</td>
+          </tr>
+          <tr>
+            <td colspan="2">7</td> <!-- table data, colspan="integer" makes the piece of data take up *integer* columns in the table ( more than one column )-->
+            <td>8</td>
           </tr>
       </tbody>
     </table>
