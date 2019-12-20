@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Links are found in nearly all web pages. Links allow users to click their way from page to page.">
+    <title>HTML Links</title>
+  </head>
+  <body>
+    <!-- thats a link to other website -->
+    <a href="https://www.w3schools.com/html/html_links.asp">Click me to get into tutorial website.</a>
+
+    <br/>
+
+    <!-- and that is link to the same webste (local link, other file)-->
+    <a href="5.html">Open 5.html</a>
+
+    <br/>
+
+    <!-- The 'target' attribute specifies where to open linked document
+      _blank -> opens the document in a new tab -->
+    <a href="http://www.vatican.va/content/john-paul-ii/en.html" target="_blank">Papiez _blank</a>
+    <br/>
+    <!-- _self -> opens the document in the same tab as it was clicked (it is default)-->
+    <a href="http://www.vatican.va/content/john-paul-ii/en.html" target="_self">Papiez _self</a>
+    <br/>
+    <!-- If your webpage is locked in a frame, you can use _top to break out of the frame -->
+    <a href="http://www.vatican.va/content/john-paul-ii/en.html" target="_top">Papiez _top</a>
+    <br/>
+    <!-- Opens the linked document in the parent frame (idk how it works just looks and works like _top)  -->
+    <a href="http://www.vatican.va/content/john-paul-ii/en.html" target="_parent">Papiez _parent</a>
+
+    <hr/>
+
+    <!-- image as a link-->
+    <a href="3.html">
+      <img src="gfx/rakieta_elon.jfif" alt="nowa rakieta elona" style="width:42px; border:0;">
+    </a>
+
+    <hr/>
+
+    <!-- 'title' attribute -> The information is most often shown as a tooltip text when the mouse moves over the element. -->
+    <a href="http://www.vatican.va/content/john-paul-ii/en.html" title="Papiez II Polak">Papiez with title</a>
+    
+
+  </body>
+</html>
