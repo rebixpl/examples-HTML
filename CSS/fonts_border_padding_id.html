@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="HTML CSS">
+    <title>HTML CSS</title>
+
+    <!-- External style sheets can be referenced with a full URL or with a path relative to the current web page. -->
+    <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+
+    <!-- CSS fonts and borders -->
+    <!-- "border" property defines a border around (taka ramka) an HTML element -->
+    <!-- The CSS "padding" property defines a padding (space) between the text and the border: -->
+    <!-- "margin" określa inaczej margines -->
+    <style>
+      body {background-color:powderblue;}
+      h1 {
+        color: blue;
+        font-family: verdana;
+        font-size: 300%;
+        margin: 50px;
+      }
+      p {
+        color: red;
+        font-family: courier;
+        font-size: 160%;
+        border: 1px solid violet;
+        padding: 30px;
+      }
+      #p01 {
+        color: green;
+      }
+      p.error {
+        color: red;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+
+    <!-- "id" defines special element, you can define this element in style at the top-->
+    <p id="p01">I am different.</p>
+
+    <!-- To define a style for special types of elements, add a "class" attribute to the element
+        then define a style for the elements with the specific class at the top -->
+    <p class="error">WARNINGG ERROR CRITICAL DAMAGE ERROR YOU ARE WARNED</p>
+
+  </body>
+</html>
