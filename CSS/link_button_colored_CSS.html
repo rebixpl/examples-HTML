@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="HTML Colored Links">
+    <title>HTML Link Colors</title>
+
+    <!-- padding: x y - odstępy od krawędzi,
+         text-align: center - usytuowanie tekstu na środku
+         display:inline-block - wstawiamy do każdego bloku, który ma być wyświetlony w linii –
+                                oto cała filozofia tego rozwiązania.-->
+    <style>
+      a:link, a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      a:hover, a:active {
+        background-color: red;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h2>Link Colored Button</h2>
+    <a href="8.html" target="_blank">Click me!</a>
+  </body>
+</html>
