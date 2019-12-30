@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Lists</title>
+    <style>
+      body {
+        background-color: #f7ff66;
+      }
+      h3 {
+        background-color: #2bc3ff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- unordered list -->
+    <h3>UNORDERED LIST</h3>
+    <ul style="list-style-type:circle;"> <!-- The CSS 'list-style-type' property is used to define the style of the list item marker,
+                                              there are four values: disc(bullet, default), circle, square, none(without marker)-->
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <!-- ordered list -->
+    <h3>ORDERED LIST</h3>
+    <ol type="a"> <!-- type attribute of the <ol> tag, defines the type of the list item marker,
+                        there are 5 types: 1, A, a, I, i -->
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+
+
+    <!-- description lists -->
+    <h3>DESCRIPTION LISTS</h3>
+    <dl> <!-- description list define -->
+      <dt>Coffer</dt> <!-- <dt> defines the term(name) -->
+      <dd>- black hot drink</dd> <!-- <dd> describes term defined before with <dt> -->
+
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+
+
+    <!-- nested HTML lists -->
+    <h3>NESTED HTML LIST</h3>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea
+         <ul style="list-style-type:square;"> <!-- unordered list inside unordered list -->
+           <li>Black tea</li>
+           <li>Green tea</li>
+         </ul>
+      </li>
+      <li>Milk</li>
+    </ul>
+
+
+
+  </body>
+</html>
