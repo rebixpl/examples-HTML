@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="everything about HTML tables">
+    <title>HTML Tables</title>
+    <!-- border - adds border to the table -->
+    <!-- padding - Cell padding specifies the space between the cell content and its borders. -->
+    <!-- text-align: left; - To left-align the table headings, use the CSS text-align property: -->
+    <!-- border-spacing: - Border spacing specifies the space between the cells.  If the table has collapsed borders, border-spacing has no effect.-->
+    <style>
+      table, td, th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td, th {
+        padding: 5px;
+      }
+      th {
+        text-align: left;
+      }
+      table {
+        border-spacing: 5px;
+      }
+    </style>
+    <style>
+      table#t01 {
+        width: 100%;
+        background-color: #ffff99;
+      }
+      table#t01 th {
+        color: white;
+        background-color: black;
+      }
+      table#t01 tr:nth-child(even) {
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Defining an HTML table -->
+    <table style="width:100%" id="t01"> <!-- you need to create table id to defien a special style for the whole table -->
+      <caption>YOUR FRIENDS</caption> <!-- creates caption on the top of the table -->
+      <tr> <!-- table row -->
+        <th>Firstname</th> <!-- table header -->
+        <th rowspan="2">Lastname</th> <!-- rowspan makse a cell span more than one row -->
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td> <!-- table data -->
+        <td>Smith</td>
+        <td colspan="2">50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td colspan="2">69</td> <!-- colspan makse a cell span more than one column -->
+      </tr>
+    </table>
+  </body>
+</html>
