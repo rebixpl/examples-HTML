@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML JavaScript</title>
+</head>
+<body>
+
+    <!--Use JS to change text!-->
+    <h2>Use JS to change text!</h2>
+    <p id="demo"></p>
+
+    <!--The <script> tag is used to define a client-side script (JavaScript)-->
+    <!-- To select an HTML element, JavaScript most often uses the 'document.getElementById()'' method.-->
+    <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script> 
+    <hr/>
+
+    <!-- JavaScript can change HTML styles-->
+    <p id="demo2">JavaScript can chage the style of SFML element!</p>
+
+    <script>
+    function myFunction(){
+        document.getElementById("demo2").style.color = "red";
+        document.getElementById("demo2").style.backgroundColor = "yellow";
+        document.getElementById("demo2").style.fontSize = "25px";
+    }
+    </script>
+
+    <button type="button" onclick="myFunction()">Click me!</button>
+    <hr/>
+
+    <!-- JavaScript can change HTML attributes-->
+    <script>
+    function light(sw) {
+        var picture;
+        if (sw == 0) {
+            picture = "gfx/light_off.jpg";
+        } else {
+            picture = "gfx/light_on.jpg";
+        }
+        document.getElementById('myImage').src = picture;
+    }
+    </script>
+    
+    <img id="myImage" src="gfx/light_off.jpg" alt="Lightbulb is OFF." width="630", height="630">
+
+    <p>
+        <button type="button" onclick="light(1)">Light ON</button>
+        <button type="button" onclick="light(0)">Light OFF</button>
+    </p>
+
+
+    <!-- <noscript> tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripts-->
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    
+</body>
+</html>
