@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Iframes</title>
+</head>
+<body>
+    <!-- Iframe is used to display a web page inside a web page-->
+    <iframe src="https://kononopedia.szkolna17.pl/Kononopedia_-_Uniwersum" style="width: 300px; height: 200px;"></iframe>
+    <iframe src="https://leczna24.pl/" height="200" width="300" style="border: none;"></iframe> <!-- to remove Iframe border you need to use CSS border property inside style attribute -->
+    <iframe src="https://www.bing.com/" style="width: 300; height: 400; border: 3px solid rgb(175, 25, 25);"></iframe> <!-- you can change style of border as well-->
+    <hr/>
+
+    <!-- iFrame - target for a link (it opens a new window inside iFrame while link clicked)-->
+    <!-- The target attribute of the link must refer to the name attribute of the iframe: -->
+    <iframe src="" name="iFrame_a" height="300px" width="100%" style="border: 5px solid greenyellow;"></iframe>
+    <p><a href="https://images.genius.com/cf55cf06458c0ecb8bda7b29a3b0f0c9.647x936x1.jpg" target="iFrame_a">Display Gorilla Motherfucker</a></p>
+</body>
+</html>
