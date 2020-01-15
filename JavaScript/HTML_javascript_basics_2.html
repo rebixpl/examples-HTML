@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Simple JavaScript example!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JavaScript example!</title>
+    </head>
+    <body>
+        <!-- The <script> tag 
+                    * is used to define a script (JS)
+                    * contains script statements or points to external script file through the 'src' attribute
+        -->
+        <h2>Use JavaScript to change text!</h2>
+        <button type="button" onclick="myFunction()">Click me!</button> <!-- when this buton is clicked it runs myFunction() -->
+        <p id="demo">This is a demonstration</p> <!-- this paragraph has given id 'demo' -->
+
+        <script>
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "Hello, JavaScript!";
+        }
+        </script> <!-- to select HTML element JS uses 'document.getElementById()' method, you can see function definition higher up -->
+
+
+        <hr/>
+
+        <!-- JavaScript can change HTML styles-->
+        <h1>JS changing HTML styles</h1>
+        <p id="demo2">JavaScript can change the style of an HTML element</p>
+
+        <script>
+        function myNewFunction(){
+            document.getElementById("demo2").style.fontSize = "25px";
+            document.getElementById("demo2").style.color = "red";
+            document.getElementById("demo2").style.backgroundColor = "yellow";
+        }
+        </script>
+
+        <button type="button" onclick="myNewFunction()">Click me!</button>
+        
+        <hr/>
+        
+
+        <!-- JavaScript can change HTML attributes-->
+        <script>
+        function light(sw){
+            var pic;
+            if (sw == 0) {
+                pic = "gfx/light_off.jpg"
+            } else {
+                pic = "gfx/light_on.jpg"
+            }
+            document.getElementById("myImage").src = pic;
+        }
+        </script>
+
+        <img id="myImage" src="gfx/light_off.jpg" width="100">
+
+        <p>
+            <button type="button" onclick="light(1)">Light On</button>
+            <button type="button" onclick="light(0)">Light Off</button>
+        </p>
+
+
+
+        <!--  <noscript> tag
+                    The <noscript> tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripts
+        -->
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    </body>
+</html>
