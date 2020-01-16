@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HTML JavaScript where to BASICS</title>
+    </head>
+    <body>
+        <!-- the JS code must be inserted between <script> and </script> tags-->
+        <p id="demo"></p>
+        <script>
+        function myFirstFunction(){
+            document.getElementById("demo").innerHTML = "My first JS script.";
+        }
+        </script> <!-- JS function can be placed in <head> section or in <body> section of HTML page-->
+        <button type="button" onclick="myFirstFunction()">Click me to try it!</button>
+
+
+
+        <!-- external JavaScript file
+                * externaj JS files have the extension '.js'
+                * to use an external scrip, put the name of the script file in the 'src' attribute of a <script> tag 
+                * you can place external script reference in <head> or <body> -->
+        <script src="JavaScript/1.js"></script>
+        <button type="button" onclick="myJSFunction()">Click me to activate external JS script!</button>
+        
+        <!-- external References
+                  * external JS scripts can be referenced with a URL or path to a file-->
+        <script src="https://www.w3schools.com/js/myScript1.js"></script>
+        
+    </body>
+</html>
