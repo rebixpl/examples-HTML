@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ADDING CSS</title>
+        <!-- EXTERNAL CSS
+                * External styles are defined within the <link> element, inside the <head> section of an HTML page
+                * by changing one file you can change the look of entire website -->
+        <link rel="stylesheet" type="text/css" href="CSS/1.css">
+
+
+
+        <!-- INTERNAL CSS
+                * internal style is defined inside the <style> element, inside the head section
+                * it can be used if only one HTML page has unique style -->
+        <style>
+        body{
+            background-color: cornsilk;
+        }
+
+        h1{
+            color: navy;
+            margin-left: 20px;
+        }
+        </style>
+        
+        <!-- !If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. -->
+
+
+    </head>
+    <body>
+        <!-- How to add CSS-->
+
+        <h1>This is a heading!</h1>
+        <p>This is a paragraph!</p>
+
+        <!-- INLINE CSS 
+                * it is used to apply a unique style for a single element 
+                * inline styles are defined with "style" attribute -->
+        <h1 style="color: blue; text-align:center;">This is a heading!</h1>
+        <p style="color:red; background-color: aquamarine;">This is a paragraph!</p>
+
+
+    </body>
+</html>
