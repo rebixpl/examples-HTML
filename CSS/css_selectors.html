@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+</head>
+<body>
+    <!-- CSS selectors are used to "find" (or select) the HTML elements you want to style -->
+
+    <!-- CSS element selector -->
+    <style>
+    p {
+        text-align: center;
+        color: crimson;
+    }
+    </style>
+
+    <p>Every paragraph will be affected by the style!</p>
+    <p id="para1">Me Too!</p>
+
+
+
+    <!-- CSS id selector -->
+    <style>
+    #para2{
+        text-align: center;
+        color: aqua;
+    }
+    </style>
+
+    <p>This paragraph is not affected by the style.</p>
+    <p id="para2">But this paragraph is!</p>
+
+
+
+    <!-- CSS class selector-->
+    <!-- To select elements with a specific class, write a period (.) character, followed by the class name.-->
+    <style>
+    .center{
+        text-align: center;
+        color:blue;
+    }
+    </style>
+
+    <h1 class="center">Red and center-aligned heading!</h1>
+    <p class="center">Red and center-aligned paragraph!</p>
+
+    <!-- In this example only <p> elements with class="center" will be center-aligned: -->
+    <style>
+    p.center{
+        text-align: center;
+        color:pink;
+    }
+    </style>
+
+    <h1 class="center">This heading will not be affected!</h1>
+    <p class="center">This paragraph will be pink and center-alligned!</p>
+
+    <hr/>
+    <!-- HTML elements can also refer to more than one class. -->
+    <style>
+    p.center{
+        text-align: center;
+        color:red;
+    }
+
+    p.large{
+        font-size: 300%;
+    }
+    </style>
+
+    <h1 class="center">This heading will not be affected</h1>
+    <p class="center">This paragraph will be red and center-aligned.</p>
+    <p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p>
+    <hr/>
+
+
+
+    <!-- CSS universal selector-->
+    <!--* The universal selector (*) selects all HTML elements on page -->
+    <style>
+    * {
+        text-align: center;
+        color:azure;
+    }
+    </style>
+
+    <h1>Hello World!</h1>
+    <p>Every element on this page will be affected by the style. (*) </p>
+    <p id="para2">Me TOO!</p>
+
+
+
+    <!-- CSS grouping selector-->
+    <style>
+    h1, h2, p{
+        text-align: center;
+        color: red;
+    }
+    </style>
+
+    <h1>Hello World!</h1>
+    <h2>Smaller heading!</h2>
+    <p>This is paragraph!</p>
+    
+</body>
+</html>
